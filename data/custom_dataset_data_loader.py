@@ -6,8 +6,6 @@ def CreateDataset(opt):
     dataset = None
     from data.aligned_dataset import AlignedDataset
     dataset = AlignedDataset()
-
-    print("dataset [%s] was created" % (dataset.name()))
     dataset.initialize(opt)
     return dataset
 
